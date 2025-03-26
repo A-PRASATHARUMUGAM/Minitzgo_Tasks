@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+body{
+    background-color: #24252a;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+ */
+/* 
+.main-container{
+    border:1px solid white;
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ */
+
+.heightwidth1{
+     width:80%;
+     height:100vh;
+}
+
+.heightwidth2{
+     width:90%;
+     height:100vh;
+}
+
+
+.img-upload-field{
+
+    border: 1px solid white;
+    height: 50px;
+}
+
+.img-upload-input{
+
+    display: none;
+
+}
+
+.img-upload-label{
+    border: 1px dashed #999;
+    
+}
+
+label:hover {
+  Color: #de0611;
+  Border: 1px dashed #de0611;
+}
