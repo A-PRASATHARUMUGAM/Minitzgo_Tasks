@@ -115,18 +115,36 @@ width: 50%;
 /* image display contianer */
 .img-display-container{
      width:90%;
-     height:150vh;
 }
 
 
 .img-display-box{
-    border: 1px solid yellow;
-    height: 50%;
+    padding:20px;
 }
 
 /* Images Controls */
+
+figure{
+    padding: 10px;
+    border: 1px solid wheat;
+   
+    width:30%;
+    margin:15px;
+}
+figure:hover{
+    background-color: rgba(240, 248, 255, 0.137);
+    transition: 0.5s;
+}
+figcaption{
+    padding: 10px;
+    text-align: center;
+
+}
 img{
-    width:30;
+  
+    border-radius: 15px;
+    width:100%;
+    height:auto;
 }
 
 
