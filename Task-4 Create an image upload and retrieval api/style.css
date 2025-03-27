@@ -126,8 +126,7 @@ width: 50%;
 
 /* Images Controls */
 img{
-    max-width:30vw;
-    min-width: 20px;
+    width:30;
 }
 
 
