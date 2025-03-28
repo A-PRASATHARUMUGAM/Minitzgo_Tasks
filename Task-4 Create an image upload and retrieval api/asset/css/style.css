@@ -130,6 +130,33 @@ img {
   height: auto;
 }
 
+
+/* Page 2 Button */
+
+.page2-btn-box{
+  width: 90%;
+  height: 50px;
+  margin: 20px;
+}
+.page2-btn{
+  cursor: pointer;
+  background-color: hotpink;
+  border: none;
+  font-weight: bold;
+  padding:5px;
+  width: 100px;
+  border-radius:8px;
+  color: white;
+  margin:0 10px 0 0 ;
+}
+.page2-btn:hover{
+  background-color: rgb(53, 199, 248);
+  transition: 0.5s;
+}
+
+
+
+
 /* Mobile Responsive  */
 
 @media all and (max-width: 768px) {
