@@ -1,4 +1,5 @@
 
+
 const formField = document.querySelector('.form-container');
 const uploadedArea = document.querySelector('.img-upload-field');
 const fileInput = document.querySelector('.img-upload-input');
@@ -11,12 +12,12 @@ const timestampDisplay = document.querySelector('.timestampdisplay');
 function uploadProcess() {
 
     uploadedArea.addEventListener('click', () => {
-        fileInput.click();
+        fileInput.click(); 
 
-    })
+    });
 
+ 
 }
-
 uploadProcess()
 
 
@@ -40,7 +41,8 @@ function timeStampBtn() {
 
         setTimeout(() => {
             alert('Image uploade successfully!');
-            myForm.reset();
+            formField.reset(); 
+
         }, 500);
 
 
@@ -49,6 +51,13 @@ function timeStampBtn() {
 
 
 }
+timeStampBtn();
 
-timeStampBtn()
+
+
+
+
+
+
+
 
