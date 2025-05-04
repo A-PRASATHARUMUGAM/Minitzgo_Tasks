@@ -4,15 +4,13 @@ $user = "root";
 $password = "";
 $dbname = "orders_db";
 
-// Create a connection
+
 $conn = new mysqli($host, $user, $password);
 
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Create Database
 $sql = "CREATE DATABASE IF NOT EXISTS orders_db";
 
 if ($conn->query($sql) === TRUE) {
@@ -21,10 +19,10 @@ if ($conn->query($sql) === TRUE) {
     echo "Error creating database: " . $conn->error . "<br>";
 }
 
-// Connect to the database
+
 $conn = new mysqli($host, $user, $password, $dbname);
 
-// Create Table
+
 $tableSQL = "
 CREATE TABLE IF NOT EXISTS orders (
     oid INT(11) AUTO_INCREMENT PRIMARY KEY,
@@ -73,6 +71,5 @@ if ($conn->query($tableSQL) === TRUE) {
     echo "Error creating table: " . $conn->error . "<br>";
 }
 
-// Close connection
 $conn->close();
 ?>

@@ -1,8 +1,7 @@
 <?php
-// User data stored in JSON
 $users_file = dirname(__DIR__) . '/users.json';
 
-// Load users from JSON
+
 function loadUsers() 
 {
     global $users_file;
@@ -13,21 +12,18 @@ function loadUsers()
     return [];
 }
 
-// Save users to JSON
 function saveUsers($users)
 {
     global $users_file;
     file_put_contents($users_file, json_encode($users, JSON_PRETTY_PRINT));
 }
 
-// Get all users
 function getUsers()
 {
     $users = loadUsers();
     echo json_encode($users);
 }
 
-// Get a specific user by ID
 function getUser($id)
 {
     $users = loadUsers();
@@ -41,7 +37,6 @@ function getUser($id)
     echo json_encode(["message" => "User not found."]);
 }
 
-// Add a new user
 function addUser()
 {
     $data = json_decode(file_get_contents("php://input"), true);
@@ -61,7 +56,6 @@ function addUser()
     }
 }
 
-// Update a user by ID
 function updateUser($id)
 {
     $users = loadUsers();
@@ -83,7 +77,6 @@ function updateUser($id)
     echo json_encode(["message" => "User not found."]);
 }
 
-// Delete a user by ID
 function deleteUser($id)
 {
     $users = loadUsers();
